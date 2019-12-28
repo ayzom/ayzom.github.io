@@ -1,0 +1,25 @@
+{
+    "dir": "ltr",
+    "lang": "en",
+    "name": "Akhilesh Yadav - Web Developer Resume/Portfo…",
+    "scope": "/",
+    "display": "browser",
+    "start_url": "https://ayzom.com/",
+    "short_name": "Akhilesh Yadav ",
+    "theme_color": "transparent",
+    "description": "The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites.",
+    "orientation": "any",
+    "background_color": "transparent",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "/images/favicon.ico",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/images/favicon.ico",
+            "sizes": "16x16"
+        }
+    ]
+}

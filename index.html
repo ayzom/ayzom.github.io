@@ -1,1 +1,455 @@
-Hi
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites.">
+  <meta name="keywords" content="Web developer, front end developer">
+  <meta name="author" content="Akhilesh Yadav">
+  <meta name="theme-color" content="#1d1e25">
+<!--   <meta name="background_color" content="#000000">
+  <meta name="theme_color" content="#000000"> -->
+
+
+  <title>Akhilesh Yadav - Software Engineer</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+ 
+<link rel='manifest' href='/manifest.json'>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="msapplication-starturl" content="/">
+
+
+
+<!-- HTML Meta Tags --> <title>Akhilesh Yadav - Web Developer Resume/Portfolio Website</title> <meta name="description" 
+content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites."> <link 
+href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- 
+Google / Search Engine Tags --> <link href="css/main.css" rel="stylesheet"> <meta itemprop="name" content="Akhilesh Yadav - 
+Web Developer Resume/Portfolio Website"> <link href="css/stickybar.css" rel="stylesheet"> <meta itemprop="description" 
+content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites."> <style 
+type="text/css"> <meta itemprop="image" content="">
+	@media screen and (max-width : 1920px){ <!-- Facebook Meta Tags --> .share-bar{ <meta property="og:url" 
+content="https://ayzom.com"> visibility:hidden; <meta property="og:type" content="website"> } <meta property="og:title" 
+content="Akhilesh Yadav - Web Developer Resume/Portfolio Website"> } <meta property="og:description" content="The online 
+portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites.">
+
+
+@media screen and (max-width 
+: 906px){ 
+
+<meta property="og:image" content=""> .desk{
+	  visibility:hidden; <!-- Twitter Meta Tags --> } <meta name="twitter:card" content="summary_large_image"> .share-bar{ 
+
+<meta name="twitter:title" content="Akhilesh Yadav - Web Developer Resume/Portfolio Website"> visibility:visible; <meta 
+name="twitter:description" content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, 
+accessible websites."> } <meta name="twitter:image" content="">	}
+
+
+
+</style>
+
+
+
+
+
+
+<script>
+
+// This is the service worker with the Cache-first network
+
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2302175553126930"
+  logged_in_greeting="Hi! How can I help you?"
+  logged_out_greeting="Hi! How can I help you?">
+</div>
+
+
+  <header class="site-navigation">
+    <div class="nav-container">
+      <div class="nav-brand underline">
+        <a href="index.html">Akhilesh
+          <strong>Yadav</strong>
+        </a>
+      </div>
+      <i class="nav-toggle fa fa-2x fa-bars" aria-hidden="true" id="toggle-open"></i>
+      <nav class="nav-menu">
+        <div class="nav-mobile-header">
+          <span class="primary">A</span>
+          <strong class="secondary">Y</strong>
+          <i class="nav-toggle fa fa-2x fa-close" aria-hidden="true" id="toggle-close"></i>
+        </div>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+<!--         <a href="#portfolio">Portfolio</a> -->
+        <a href="https://arki7n.github.io" target="_blank">Github</a>
+       <a href="/blog">Blog</a>
+    <!--	<a href="https://t.me/cdac_juhu_bot">Telegram Bot</> 
+	<a href="/blog">Blog</> -->
+	 
+    </div>
+  </header>
+
+  <main>
+
+    <header class="site-hero">
+      <div class="small-container">
+        <div class="about">
+
+			<div>
+			  <img src="img/akhilesh.png" class="image--cover-n">
+			</div>
+
+          <h1>
+            <!-- <span class="primary">Designer</span> / -->
+            <span class="secondary">Software Engineer</span>
+          </h1>
+          <p class="underline">Hi, I'm&nbsp
+            <a href="#"> Akhilesh</a>! I develop
+            <a href="#">websites</a>, and also do write on 
+            <a href="#">Tech Tutorials</a> on full-stack development and Cloud Services.
+          </p>
+          <p>
+            <a class="button button-secondary" href="#contact">Get in Touch</a>
+            <!-- <a class="button button-secondary" href="https://www.ayzom.com">View Website</a> -->
+          </p>
+	
+	<p>
+	<img
+ 	 src="https://ayzom.com/img/carbon.png"/>
+	</p>
+
+        </div>
+      </div>
+    </header>
+
+    <section class="section alt-bg" id="skills">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Technical Skills</h2>
+          <p>I specialize in backend web development, with knowledge in Linux system administration and Cloud services.</p>
+        </div>
+      </header>
+      <div class="container">
+        <div class="flex skills">
+          <div class="card">
+            <img src="img/html.png" alt="HTML5 Logo">
+            <h3>HTML</h3>
+          </div>
+          <div class="card">
+            <img src="img/css.png" alt="CSS3 Shield">
+            <h3>CSS</h3>
+          </div>
+          <div class="card">
+            <img src="img/react.png" alt="React Logo">
+            <h3>React</h3>
+          </div>
+          <div class="card">
+            <img src="img/js.png" alt="JavaScript Logo">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="card">
+            <img src="img/node.png" alt="Node.js Logo">
+            <h3>Node.js</h3>
+          </div>
+          <div class="card">
+            <img src="img/php.png" alt="PHP Logo">
+            <h3>PHP</h3>
+          </div>
+          <div class="card">
+            <img src="img/laravel.png" alt="Laravel Logo">
+            <h3>Laravel</h3>
+          </div>
+          <div class="card">
+            <img src="img/terminal.png" alt="Terminal Image">
+            <h3>Command Line</h3>
+          </div>
+          <div class="card">
+            <img src="img/git.png" alt="Git Logo">
+            <h3>Git</h3>
+          </div>
+
+          <div class="card">
+            <img src="img/aws.png" alt="Git Logo">
+            <h3>AWS</h3>
+          </div>
+          <div class="card">
+            <img src="img/redis.png" alt="Git Logo">
+            <h3>Redis</h3>
+          </div>
+          <div class="card">
+            <img src="img/linux.png" alt="Git Logo">
+            <h3>Linux</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offset" id="experience">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Experience</h2>
+          <p>Some of the professional positions I've held.</p>
+        </div>
+      </header>
+      <div class="container">
+        
+	
+	 <div class="flex job">
+          <div class="job-title">
+            <div class="job-company">
+              <img src="https://financialit.net/sites/default/files/morningstar.png" alt="Morningstar">
+              <div class="dates">August 2019</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <h3>Associate Software Engineer</h3>
+            <p>Currently working at Vue.js, Node.js Projects </p>
+            </div>
+        </div>
+
+	<div class="flex job">
+          <div class="job-title">
+            <div class="job-company">
+              <img src="img/dquip.png" alt="Dquip">
+              <div class="dates">Sep 2017 - Nov 2018</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <h3>Software Engineer</h3>
+            <p>Backend web developer working with JavaScript/jQuery, PHP, Laravel, MYSQL, Node.js on AWS. Responsibilities
+              include developing solutions for CRM Web Applications for different industries, Linux system administration, back end maintenance.</p>
+          </div>
+        </div>
+        
+	<div class="flex job">
+          <div class="job-title">
+            <div class="job-company">
+              <img src="img/vistasooft.png" alt="Vistasooft">
+              <div class="dates">May2017 - August 2017</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <h3>Junior Web Developer</h3>
+            <p>Junior PHP Developer working with PHP/MYSQL & Javacript/Jquery.</p>
+          </div>
+        </div>
+    </section>
+
+<!--     <section class="section alt-bg" id="portfolio">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Portfolio</h2>
+          <p>Here are a few examples of my work.</p>
+          <p>
+            <a href="https://www.ayzom.com/work" class="button">View All</a>
+          </p>
+        </div>
+      </header>
+      <div class="container">
+        <div class="flex portfolio">
+          <a class="card" target="_blank" href="http://cafebabareeba.com">
+            <img src="img/cbbr.png" alt="Cafe Ba-Ba-Reeba!">
+          </a>
+          <a class="card" target="_blank" href="http://stripburger.com">
+            <img src="img/sb.png" alt="Stripburger">
+          </a>
+          <a class="card" target="_blank" href="http://reel-club.com">
+            <img src="img/rc.png" alt="Reel Club">
+          </a>
+          <a class="card" target="_blank" href="http://tokiopub.com">
+            <img src="img/tp.png" alt="Tokio Pub">
+          </a>
+          <a class="card" target="_blank" href="http://krispykremepacificnw.com">
+            <img src="img/kkpnw.png" alt="Krispy Kreme Pacific Northwest">
+          </a>
+          <a class="card" target="_blank" href="http://shawscrabhouse.com">
+            <img src="img/shaws.png" alt="Shaw's Crab House">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Projects</h2>
+          <p>Some projects I made in my free time.</p>
+          <p>
+            <a href="https://github.com/arki7n" class="button">View GitHub</a>
+          </p>
+        </div>
+      </header>
+      <div class="container">
+        <table>
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a href="https://taniarascia.github.io/new-moon/" target="_blank">New Moon</a></td>
+              <td>A dark syntax theme optimized for web development.</td>
+            </tr>
+            <tr>
+              <td><a href="https://taniarascia.github.io/primitive" target="_blank">Primitive</a></td>
+              <td>A Sass starterpack that provides helpful, browser-consistent styling for UI elements.</td>
+            </tr>
+            <tr>
+              <td><a href="https://taniarascia.github.io/coffee" target="_blank">Cafetography</a></td>
+              <td>A project to keep track of the flavor and ambiance of all the coffeeshops that I write at.</td>
+            </tr>
+            <tr>
+              <td><a href="https://ayzom.com/music" target="_blank">Ivory &amp; Ivory</a></td>
+              <td>A list of all my musical recordings, in which I sing and play accordion.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section> -->
+
+    <section class="section alt-bg" id="contact">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Contact</h2>
+          <p>I'd love to hear from you! Fill out the form below, email me at <a href="mailto:toakhileshyadav@gmail.com">toakhileshyadav@gmail.com</a>, or find me on
+            <a href="https://twitter.com/arki7n">Twitter</a> or
+            <a href="https://github.com/arki7n">GitHub</a>.</p>
+        </div>
+      </header>
+      <div class="small-container">
+        <form action="https://formspree.io/toakhileshyadav@gmail.com" method="post">
+          <label for="name">Name</label>
+          <input type="text" name="name">
+          <label for="email">Email Address</label>
+          <input type="email" name="_replyto">
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
+          <input type="text" name="_gotcha" style="display:none">
+          <input type="submit" value="Send">
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+
+	<div class="share-bar">
+	  <ul class="share-bar--list">
+	    <li class="facebook share-bar--item">
+	      <a class="share-bar--item-link" href="https://www.facebook.com/arki7n" title="Share on Facebook." target="_blank">
+	      </a>
+	    </li>
+	    <li class="twitter share-bar--item">
+	      <a class="share-bar--item-link" href="https://www.twitter.com/arki7n" title="Tweet this Article" target="_blank">
+	      </a>
+	    </li>
+	    <li class="whatsapp share-bar--item">
+	      <a class="share-bar--item-link" href="https://wa.me/917021600076">
+	      </a>
+	    </li>
+<!-- 	    <li class="reddit share-bar--item">
+	      <a class="share-bar--item-link" href="#" title="Share on Reddit"  target="_blank">
+	      </a>
+	    </li> -->
+	    <li class="linkedin share-bar--item">
+	      <a class="share-bar--item-link" title="Share on LinkedIn" href="https://www.linkedin.com/in/arki7n" target="_blank">
+	      </a>
+	    </li>
+	  </ul>
+	</div>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <h3>
+        <span class="primary">Akhilesh</span>
+        <strong class="secondary">Yadav</strong>
+      </h3>
+      <p>
+        Web developer, autodidact, tech writer and problem solver. I also love Google SEO, SEM & Digital Marketing, and building communities.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.ayzom.com/feed">
+          <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/arki7n" target="_blank">
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/arki7n" target="_blank">
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+<!--         <a href="https://stackoverflow.com/users/4541434/tania-rascia" target="_blank">
+          <i class="fa fa-stack-overflow fa-2x" aria-hidden="true"></i>
+        </a> -->
+        <a href="https://www.linkedin.com/in/arki7n/" target="_blank">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer-bottom">
+    <div class="container">
+      <p>
+        Design Inspired by Tania Rasca.
+      </p>
+    </div>
+  </footer>
+
+
+</body>
+ 
+
+
+
+ <script src="js/scripts.js"></script>
+
+
+</html>
