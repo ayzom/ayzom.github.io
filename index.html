@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 
@@ -376,7 +375,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </header>
       <div class="small-container">
-        <form action="https://formspree.io/toakhileshyadav@gmail.com" method="post">
+        <form id="formElem">
           <label for="name">Name</label>
           <input type="text" name="name">
           <label for="email">Email Address</label>
@@ -386,6 +385,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <input type="text" name="_gotcha" style="display:none">
           <input type="submit" value="Send">
         </form>
+      </div>
+      <div class="small-container" id="post-contact" style="display:none;margin-top:20px; font-size:24px">
+        Message has been sent to Telegram.
       </div>
     </section>
 
@@ -458,6 +460,32 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </body>
  
+ <script>
+
+  formElem.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let response = await fetch('https://my-project.aykz.workers.dev/submission', 
+    {
+      method: 'POST',
+      body: new FormData(formElem)
+    });
+
+    let result = await response.json();
+    if(result){
+      const selector = document.querySelector("#post-contact").style;
+      selector.display = 'block';
+      formElem.reset();
+      setTimeout(function(){
+        selector.display = 'none';
+      }, 5000);
+    }
+
+  };
+
+ </script>
+
+
 <!-- Facebook Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
