@@ -4,52 +4,55 @@
   bottom: 0;
   height: 51px;
   border: none;
-  background: #ffffff;
   z-index: 4999991;
   transform: translateZ(0) translate3d(0, 0, 0);
-    -webkit-transform: translateZ(0) translate3d(0, 0, 0);
-    -moz-transform: translateZ(0) translate3d(0, 0, 0);
+  -webkit-transform: translateZ(0) translate3d(0, 0, 0);
+  -moz-transform: translateZ(0) translate3d(0, 0, 0);
   transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
   display: flex;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   flex-direction: row;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
   align-items: flex-start;
-    -webkit-box-align: start;
-    -webkit-align-items: flex-start;
-    -ms-flex-align: start;
-  width: 100%;
-    box-shadow: 0px -3px 3px 0px rgba(0,0,0,0.12);
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  width: 50%;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .share-bar--list {
   padding: 0;
   list-style: none;
+  display: flex;
 }
 
 .share-bar .share-bar--list {
   flex: 1 1 auto;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   overflow: hidden;
   text-align: left;
   font-size: 0;
+  border-radius: 50px;
 }
 
 .share-bar .share-bar--item {
   display: inline-block;
-  width: 20%;
-/*  max-width: 71px; */
   height: 60px;
   line-height: 50px;
+  flex: 1 1 0px;
 }
 
 .share-bar--item {
@@ -78,10 +81,10 @@
 .share-bar .linkedin .share-bar--item-link,
 .linkedin .share-bar--item,
 .share-bar .linkedin .share-bar--item-link {
-    cursor: pointer;
-    width: 100%;
-    min-width: 100%;
-    display: block;
+  cursor: pointer;
+  width: 100%;
+  min-width: 100%;
+  display: block;
 }
 
 /* Facebook */
@@ -114,7 +117,6 @@
   background-color: #4875b4;
 }
 
-
 /* Icons */
 .share-bar--item-link:before {
   display: inline-block;
@@ -128,8 +130,8 @@
   font-style: normal;
   text-rendering: optimizeLegibility;
   text-transform: none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
@@ -140,8 +142,8 @@
   font-style: normal;
   text-rendering: optimizeLegibility;
   text-transform: none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
@@ -152,8 +154,8 @@
   font-style: normal;
   text-rendering: optimizeLegibility;
   text-transform: none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
@@ -164,8 +166,8 @@
   font-style: normal;
   text-rendering: optimizeLegibility;
   text-transform: none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
 
@@ -176,8 +178,7 @@
   font-style: normal;
   text-rendering: optimizeLegibility;
   text-transform: none;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
 }
-
