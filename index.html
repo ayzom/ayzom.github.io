@@ -562,23 +562,28 @@ src="https://www.facebook.com/tr?id=1819157704972161&ev=PageView&noscript=1"
 
 <script>
 
+function FormDataToJSON(FormElement){    
+    var formData = new FormData(FormElement);
+    var ConvertedJSON= {};
+    for (const [key, value]  of formData.entries())
+    {
+        ConvertedJSON[key] = value;
+    }
+
+    return ConvertedJSON
+}
+
   formResumeElem.onsubmit = async (e) => {
     e.preventDefault();
 
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    var object = {};
-    formResumeElem.forEach(function(value, key){
-        object[key] = value;
-    });
-    var json = JSON.stringify(object);
-
     console.log(json);
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
-      body: json,
+      body: FormDataToJSON(formResumeElem),
       redirect: 'follow'
     };
 
