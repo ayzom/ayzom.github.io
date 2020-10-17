@@ -568,16 +568,22 @@ src="https://www.facebook.com/tr?id=1819157704972161&ev=PageView&noscript=1"
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    console.log(new FormData(formResumeElem));
+    var object = {};
+    formResumeElem.forEach(function(value, key){
+        object[key] = value;
+    });
+    var json = JSON.stringify(object);
+
+    console.log(json);
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
-      body: new FormData(formResumeElem),
+      body: json,
       redirect: 'follow'
     };
 
     fetch("https://api.ayzom.com/Resume-handler", requestOptions)
-      .then(response => response.text())
+      .then(response => response.json())
       .then(result => {
         console.log(result)
         formResumeElem.reset();
