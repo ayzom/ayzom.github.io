@@ -579,12 +579,11 @@ function FormDataToJSON(FormElement){
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
 
-    console.log(json);
+    const jsonData = (FormDataToJSON(formResumeElem));
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
-      body: FormDataToJSON(formResumeElem),
-      redirect: 'follow'
+      body: jsonData
     };
 
     fetch("https://api.ayzom.com/Resume-handler", requestOptions)
