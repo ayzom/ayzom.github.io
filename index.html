@@ -489,7 +489,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="pure-control-group">
             <input type="text" name="recruiter_phone" placeholder="Phone Number" />  
           </div>
-          <button type="submit" class="pure-button pure-button-primary">Get Resume</button>
+          <button type="submit" id="formResumeElemBtn" class="pure-button pure-button-primary">Get Resume</button>
       </fieldset>
   </form>
 
@@ -587,10 +587,14 @@ function FormDataToJSON(FormElement){
     };
 
     fetch("https://api.ayzom.com/Resume-handler", requestOptions)
-      .then(response => response.json())
+      .then(response => {
+        document.querySelector("#formResumeElemBtn").textContent = "Check your Email!";
+        return response.json();
+      })
       .then(result => {
         console.log(result)
         formResumeElem.reset();
+        document.querySelector("#formResumeElemBtn").textContent = "Get Resume";
       })
       .catch(error => console.log('error', error));
     }
