@@ -583,7 +583,7 @@ function FormDataToJSON(FormElement){
     var requestOptions = {
       method: 'POST',
       headers: myHeaders,
-      body: jsonData
+      body: JSON.stringify(jsonData)
     };
 
     fetch("https://api.ayzom.com/Resume-handler", requestOptions)
