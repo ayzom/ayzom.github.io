@@ -558,8 +558,7 @@ tbody > tr:last-child > td {
 
 a.button,
 [type=button],
-[type=submit],
-button {
+[type=submit] {
   display: inline-block;
   -webkit-appearance: none;
   -webkit-transition: background 500ms ease;

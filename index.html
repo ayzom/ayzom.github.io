@@ -14,6 +14,8 @@
 
 
   <title>Akhilesh Yadav - Software Engineer</title>
+  <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+  <link rel='stylesheet' href='scripts/index.css'/>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -145,8 +147,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <a href="https://github.com/arki7n" target="_blank">Github</a>
        <a href="https://blog.ayzom.com">Blog</a>
        <a href="#openModal">Hire Me</a>
-    <!--	<a href="https://t.me/cdac_juhu_bot">Telegram Bot</> 
-	<a href="/blog">Blog</> -->
+       <a href="javascript:;" aria-controls="modal1">Live Call</a>
 	 
     </div>
   </header>
@@ -500,7 +501,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <tg-chat name="world"></tg-chat>
 </body>
- 
+
+<script src="./scripts/index.js"></script>
+
+<main style="display: none;">
+
+<div class=bg-paper></div>
+
+<div>
+  My Socket ID: <span id="my-socket-id"></span>
+</div>
+<div style="display:hidden" id="active-user-container">
+  <h3 class="panel-title">Active Users:</h3>
+</div>
+</main>
+
+<div id=modal1 class=modal aria-labelledby=modal-title1>
+  <div class=modal_content>
+    <div class="modal_scroll" style="text-align-last: center;">
+      <div>
+        <button class="pure-button pure-button-primary" id="getPermissionBtn" onclick="getPermission()">Click to Talk</button>
+      </div>
+      <div class="video-chat-container">
+        <h2 class="talk-info" id="talking-with-info">
+        </h2>
+        <div class="video-container">
+          <video autoplay class="remote-video" id="remote-video" controls></video>
+        </div>
+        <div style="display: none;">
+          <video autoplay muted class="local-video" id="local-video"></video>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=lightbox data-modal_lightbox>
+  <div id=modal_bg class=lightbox_bg></div>
+</div>
+
+
+
+<script src="scripts/popupanim.js"></script>
+
+
  <script>
 
   formElem.onsubmit = async (e) => {
