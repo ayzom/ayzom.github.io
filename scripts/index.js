@@ -147,8 +147,10 @@ async function getPermission() {
     }
   );
 
+  let userMsg = document.querySelector("#ws-user-details").value;
+
   let form_data = new FormData();
-  const item = {"name":"akhilesh", "_replyto":"akhilesh","message":"New Call Request Received at https://54.175.4.157:8443/index.html?admin"};
+  const item = {"name": userMsg, "_replyto":"akhilesh","message":"New Call Request Received at https://54.175.4.157:8443/index.html?admin"};
   for ( let key in item ) {
     form_data.append(key, item[key]);
   }
@@ -158,8 +160,9 @@ async function getPermission() {
     body: form_data
   });
 
-
+  document.querySelector("#ws-user-details").disabled = true;
   document.querySelector("#getPermissionBtn").innerText = "Click anywhere to close!"
+  document.querySelector("#userMsg").innerHTML = "Please wait for a minute. You Call Request has been sent.";
   
   peerConnection.ontrack = function ({ streams: [stream] }) {
     const remoteVideo = document.getElementById("remote-video");

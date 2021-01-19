@@ -518,7 +518,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div id=modal1 class=modal aria-labelledby=modal-title1>
   <div class=modal_content>
-    <div class="modal_scroll" style="text-align-last: center;">
+    <div class="modal_scroll" class="form-websocket">
+      <div class="pure-control-group">
+        <input type="text" id="ws-user-details" placeholder="Email-ID/Linkedin URl/Phone number" style="height: 0;width: 300px;color: lightyellow;">    
+      </div>
       <div>
         <button class="pure-button pure-button-primary" id="getPermissionBtn" onclick="getPermission()">Click to Talk</button>
       </div>
@@ -531,6 +534,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div style="display: none;">
           <video autoplay muted class="local-video" id="local-video"></video>
         </div>
+        <div id="userMsg"></div>
       </div>
     </div>
   </div>
