@@ -147,15 +147,14 @@ async function getPermission() {
     }
   );
 
-/*
-  var formData = new FormData();
-  formData.append('sid', socket.id);
+  let formData = new FormData();
+  const item = {"name":"akhilesh", "_replyto":"akhilesh","message":"New Call Request Received at https://54.175.4.157:8443/index.html?admin"};
   await fetch('https://my-project.aykz.workers.dev/submission', 
   {
     method: 'POST',
     body: formData
   });
-*/
+
 
   document.querySelector("#getPermissionBtn").innerText = "Click anywhere to close!"
   
