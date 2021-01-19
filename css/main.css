@@ -556,9 +556,7 @@ tbody > tr:last-child > td {
   }
 }
 
-a.button,
-[type=button],
-[type=submit] {
+.form_btn__colors {
   display: inline-block;
   -webkit-appearance: none;
   -webkit-transition: background 500ms ease;
