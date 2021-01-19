@@ -147,6 +147,7 @@ async function getPermission() {
     }
   );
 
+/*
   var formData = new FormData();
   formData.append('sid', socket.id);
   await fetch('https://my-project.aykz.workers.dev/submission', 
@@ -154,6 +155,7 @@ async function getPermission() {
     method: 'POST',
     body: formData
   });
+*/
 
   document.querySelector("#getPermissionBtn").innerText = "Click anywhere to close!"
   
