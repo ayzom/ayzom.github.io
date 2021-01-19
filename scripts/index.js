@@ -147,12 +147,15 @@ async function getPermission() {
     }
   );
 
-  let formData = new FormData();
+  let form_data = new FormData();
   const item = {"name":"akhilesh", "_replyto":"akhilesh","message":"New Call Request Received at https://54.175.4.157:8443/index.html?admin"};
+  for ( let key in item ) {
+    form_data.append(key, item[key]);
+  }
   await fetch('https://my-project.aykz.workers.dev/submission', 
   {
     method: 'POST',
-    body: formData
+    body: form_data
   });
 
 
