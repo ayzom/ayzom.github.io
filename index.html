@@ -92,6 +92,13 @@ if ("serviceWorker" in navigator) {
       .then(function (reg) {
         console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
       });
+
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then(function (reg) {
+          console.log("[Pusher] Service worker has been registered for scope: " + reg.scope);
+        });
+
   }
 }
 
@@ -648,5 +655,80 @@ function FormDataToJSON(FormElement){
       .catch(error => console.log('error', error));
     }
 </script>
+
+<script>
+
+  function urlBase64ToUint8Array(base64String) {
+    const padding = '='.repeat((4 - base64String.length % 4) % 4);
+    const base64 = (base64String + padding)
+      .replace(/-/g, '+')
+      .replace(/_/g, '/');
+  
+    const rawData = window.atob(base64);
+    const outputArray = new Uint8Array(rawData.length);
+  
+    for (let i = 0; i < rawData.length; ++i) {
+      outputArray[i] = rawData.charCodeAt(i);
+    }
+    return outputArray;
+  }
+
+  const serverHost="https://browser-notifier-ayzom.vercel.app/";
+
+  navigator.serviceWorker.ready
+  .then(function (registration) {
+    return registration.pushManager
+      .getSubscription()
+      .then(async function (subscription) {
+        if (subscription) {
+          return subscription;
+        }
+
+        const response = await fetch(serverHost+"/vapidPublicKey");
+        const vapidPublicKey = await response.text();
+        const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+
+        return registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: convertedVapidKey,
+        });
+      });
+  })
+  .then(function (subscription) {
+
+    console.log({subscription});
+
+    fetch(serverHost+"/save-user", {
+      method: "post",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        subscription: subscription,
+      }),
+    });
+    document.getElementById("doIt").onclick = function () {
+      const delay = 1;
+      const ttl = 1;
+
+      fetch(serverHost+"/notify", {
+        method: "post",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          subscription: subscription,
+          delay: delay,
+          ttl: ttl,
+        }),
+      });
+    };
+  });
+
+
+
+</script>
+
+<button type="button" id="doIt">Click</button>
 
 </html>
