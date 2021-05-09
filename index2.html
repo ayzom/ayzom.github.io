@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites.">
+  <meta name="keywords" content="Web developer, front end developer">
+  <meta name="author" content="Akhilesh Yadav">
+  <meta name="theme-color" content="#1d1e25">
+
+  <title>Akhilesh Yadav - Software Engineer</title>
+  <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+  <link rel='stylesheet' href='scripts/index.css'/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,cyrillic" />
+
+  <link rel="stylesheet" href="https://zavoloklom.github.io/material-design-iconic-font/css/docs.md-iconic-font.min.css" />
+  <link rel="stylesheet" href="css/modal.css" />
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+
+
+<link rel='manifest' href='/manifest.json'>
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="msapplication-starturl" content="/">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJ2QXVV');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<!-- HTML Meta Tags --> <title>Akhilesh Yadav - Web Developer Resume/Portfolio Website</title> <meta name="description" 
+content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites."> <link 
+href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- 
+Google / Search Engine Tags --> <link href="css/main.css" rel="stylesheet"> <meta itemprop="name" content="Akhilesh Yadav - 
+Web Developer Resume/Portfolio Website"> <link href="css/stickybar.css" rel="stylesheet"> <meta itemprop="description" 
+content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites."> <style 
+type="text/css"> <meta itemprop="image" content="">
+   @media screen and (max-width : 1920px){ <!-- Facebook Meta Tags --> .share-bar{ <meta property="og:url" 
+content="https://ayzom.com"> visibility:hidden; <meta property="og:type" content="website"> } <meta property="og:title" 
+content="Akhilesh Yadav - Web Developer Resume/Portfolio Website"> } <meta property="og:description" content="The online 
+portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, accessible websites.">
+
+
+@media screen and (max-width 
+: 906px){ 
+
+<meta property="og:image" content=""> .desk{
+     visibility:hidden; <!-- Twitter Meta Tags --> } <meta name="twitter:card" content="summary_large_image"> .share-bar{ 
+
+<meta name="twitter:title" content="Akhilesh Yadav - Web Developer Resume/Portfolio Website"> visibility:visible; <meta 
+name="twitter:description" content="The online portfolio of web developer Akhilesh Yadav. I create beautiful, responsive, 
+accessible websites."> } <meta name="twitter:image" content="">   }
+
+
+
+</style>
+
+
+
+
+
+
+<script>
+
+// This is the service worker with the Cache-first network
+
+// Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+
+// Check compatibility for the browser we're running this in
+if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("[PWA Builder] active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("pwabuilder-sw.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+      });
+
+      navigator.serviceWorker
+        .register("service-worker.js")
+        .then(function (reg) {
+          console.log("[Pusher] Service worker has been registered for scope: " + reg.scope);
+        });
+
+  }
+}
+
+
+
+</script>
+
+
+
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ2QXVV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <header class="site-navigation">
+    <div class="nav-container">
+      <div class="nav-brand underline">
+        <a href="index.html">Akhilesh
+          <strong>Yadav</strong>
+        </a>
+      </div>
+      <i class="nav-toggle fa fa-2x fa-bars" aria-hidden="true" id="toggle-open"></i>
+      <nav class="nav-menu">
+        <div class="nav-mobile-header">
+          <span class="primary">A</span>
+          <strong class="secondary">Y</strong>
+          <i class="nav-toggle fa fa-2x fa-close" aria-hidden="true" id="toggle-close"></i>
+        </div>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+<!--         <a href="#portfolio">Portfolio</a> -->
+        <a href="https://github.com/arki7n" target="_blank">Github</a>
+       <a href="https://blog.ayzom.com">Blog</a>
+       <a href="#openModal">Hire Me</a>
+       <a href="javascript:;" aria-controls="modal1">Live Call</a>
+    
+    </div>
+  </header>
+
+  <main>
+
+    <header class="site-hero">
+      <div class="small-container">
+        <div class="about">
+
+         <div>
+           <img src="img/akhilesh.png" class="image--cover-n">
+         </div>
+
+          <h1>
+            <!-- <span class="primary">Designer</span> / -->
+            <span class="secondary">Software Engineer</span>
+          </h1>
+          <p class="underline">Hi, I'm&nbsp
+            <a href="#"> Akhilesh</a>! I develop
+            <a href="#">websites</a>, and also do write on 
+            <a href="#">Tech Tutorials</a> on full-stack development and Cloud Services.
+          </p>
+          <p>
+            <a class="button button-secondary form_btn__colors" href="#contact">Send Message</a>
+       <a class="button button-secondary form_btn__colors" href="https://booking.appointy.com/arki7n" target="_blank">Schedule Call</a>
+            <!-- <a class="button button-secondary" href="https://www.ayzom.com">View Website</a> -->
+          </p>
+   
+   <p>
+   <img
+    src="https://ayzom.com/img/carbon.png"/>
+   </p>
+
+        </div>
+      </div>
+    </header>
+
+
+    <section class="section alt-bg" id="skills">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Latest Blog</h2>
+          <p>I specialize in backend web development, with knowledge in Linux system administration and Cloud services.</p>
+        </div>
+      </header>
+      <div class="container" id="blogposts">
+
+      </div>
+    </section>
+
+
+    <section class="section alt-bg" id="skills">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Technical Skills</h2>
+          <p>I specialize in backend web development, with knowledge in Linux system administration and Cloud services.</p>
+        </div>
+      </header>
+      <div class="container">
+        <div class="flex skills">
+          <div class="card">
+            <img src="img/html.png" alt="HTML5 Logo">
+            <h3>HTML</h3>
+          </div>
+          <div class="card">
+            <img src="img/css.png" alt="CSS3 Shield">
+            <h3>CSS</h3>
+          </div>
+          <div class="card">
+            <img src="https://vuejs.org/images/logo.png" alt="Vue Logo">
+            <h3>Vue</h3>
+          </div>
+          <div class="card">
+            <img src="img/js.png" alt="JavaScript Logo">
+            <h3>JavaScript</h3>
+          </div>
+          <div class="card">
+            <img src="img/node.png" alt="Node.js Logo">
+            <h3>Node.js</h3>
+          </div>
+          <div class="card">
+            <img src="img/php.png" alt="PHP Logo">
+            <h3>PHP</h3>
+          </div>
+          <div class="card">
+            <img src="img/laravel.png" alt="Laravel Logo">
+            <h3>Laravel</h3>
+          </div>
+          <div class="card">
+            <img src="img/terminal.png" alt="Terminal Image">
+            <h3>Command Line</h3>
+          </div>
+          <div class="card">
+            <img src="img/git.png" alt="Git Logo">
+            <h3>Git</h3>
+          </div>
+
+          <div class="card">
+            <img src="img/aws.png" alt="Git Logo">
+            <h3>AWS</h3>
+          </div>
+          <div class="card">
+            <img src="img/redis.png" alt="Git Logo">
+            <h3>Redis</h3>
+          </div>
+          <div class="card">
+            <img src="img/linux.png" alt="Git Logo">
+            <h3>Linux</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section offset" id="experience">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Experience</h2>
+          <p>Some of the professional positions I've held.</p>
+        </div>
+      </header>
+      <div class="container">
+        
+   
+    <div class="flex job">
+          <div class="job-title">
+            <div class="job-company">
+              <img src="https://financialit.net/sites/default/files/morningstar.png" alt="Morningstar">
+              <div class="dates">August 2019</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <h3>Software Engineer</h3>
+            <p>Currently working at Vue.js, Node.js Projects </p>
+            </div>
+        </div>
+
+   <div class="flex job">
+          <div class="job-title">
+            <div class="job-company">
+              <img src="img/dquip.png" alt="Dquip">
+              <div class="dates">Sep 2017 - Nov 2018</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <h3>Software Engineer</h3>
+            <p>Backend web developer working with JavaScript/jQuery, PHP, Laravel, MYSQL, Node.js on AWS. Responsibilities
+              include developing solutions for CRM Web Applications for different industries, Linux system administration, back end maintenance.</p>
+          </div>
+        </div>
+        
+   <div class="flex job">
+          <div class="job-title">
+            <div class="job-company">
+              <img src="img/vistasooft.png" alt="Vistasooft">
+              <div class="dates">May2017 - August 2017</div>
+            </div>
+          </div>
+          <div class="job-description">
+            <h3>Junior Web Developer</h3>
+            <p>Junior PHP Developer working with PHP/MYSQL & Javacript/Jquery.</p>
+          </div>
+        </div>
+    </section>
+
+
+    <section class="section alt-bg" id="contact">
+      <header class="section-header">
+        <div class="small-container">
+          <h2>Contact</h2>
+          <p>I'd love to hear from you! Fill out the form below, email me at <a href="mailto:toakhileshyadav@gmail.com">toakhileshyadav@gmail.com</a>, or find me on
+            <a href="https://twitter.com/arki7n">Twitter</a> or
+            <a href="https://github.com/arki7n">GitHub</a>.</p>
+        </div>
+      </header>
+      <div class="small-container">
+        <form id="formElem">
+          <label for="name">Name</label>
+          <input type="text" name="name">
+          <label for="email">Email Address</label>
+          <input type="email" name="_replyto">
+          <label for="message">Message</label>
+          <textarea name="message" cols="30" rows="10"></textarea>
+          <input type="text" name="_gotcha" style="display:none">
+          <input class="form_btn__colors" type="submit" value="Send">
+        </form>
+      </div>
+      <div class="small-container" id="post-contact" style="display:none;margin-top:20px; font-size:24px">
+        Message has been sent to Telegram.
+      </div>
+    </section>
+
+  </main>
+
+
+   <div class="share-bar">
+     <ul class="share-bar--list">
+       <!--        <li class="facebook share-bar--item">
+         <a class="share-bar--item-link" href="https://www.facebook.com/arki7n" title="Share on Facebook." target="_blank">
+         </a>
+       </li> -->
+       <li class="twitter share-bar--item">
+         <a class="share-bar--item-link" href="https://www.twitter.com/arki7n" title="Tweet this Article" target="_blank">
+         </a>
+       </li>
+       <li class="whatsapp share-bar--item">
+         <a class="share-bar--item-link" href="https://wa.me/917021600076">
+         </a>
+       </li>
+<!--      <li class="reddit share-bar--item">
+         <a class="share-bar--item-link" href="#" title="Share on Reddit"  target="_blank">
+         </a>
+       </li> -->
+       <li class="linkedin share-bar--item">
+         <a class="share-bar--item-link" title="Share on LinkedIn" href="https://www.linkedin.com/in/arki7n" target="_blank">
+         </a>
+       </li>
+     </ul>
+   </div>
+
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <h3>
+        <span class="primary">Akhilesh</span>
+        <strong class="secondary">Yadav</strong>
+      </h3>
+      <p>
+        Web developer, autodidact, tech writer and problem solver. I also love Google SEO, SEM & Digital Marketing, and building communities.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.ayzom.com/feed">
+          <i class="fa fa-rss fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/arki7n" target="_blank">
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com/arki7n" target="_blank">
+          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/arki7n/" target="_blank">
+          <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+  <footer class="footer-bottom">
+    <div class="container">
+      <p>
+        Design Inspired by Tania Rasca.
+      </p>
+    </div>
+  </footer>
+
+
+<!-- Modal Start -->
+
+<div id="openModal" class="modal-window">
+  <div>
+    <a href="#" title="Close" class="modal-close">Close</a>
+    <h1>Email Resume</h1>
+    <div>Please fill in below details to get my resume in your email inbox. Hope you find it helpful.</div>
+    
+    <form class="pure-form" id="formResumeElem">
+    <fieldset>
+          <div class="pure-control-group">
+            <input type="email" name="recruiter_email" placeholder="Email" />
+          </div>
+          <div class="pure-control-group">
+            <input type="text" name="firm_name_person" placeholder="Name" />  
+          </div>
+          <div class="pure-control-group">
+            <input type="text" name="firm_name" placeholder="Company Name" />
+          </div>
+          <div class="pure-control-group">
+            <input type="text" name="firm_role" placeholder="Role/Designation" />  
+          </div>
+          <div class="pure-control-group">
+            <input type="text" name="recruiter_phone" placeholder="Phone Number" />  
+          </div>
+          <button type="submit" id="formResumeElemBtn" class="pure-button pure-button-primary">Get Resume</button>
+      </fieldset>
+  </form>
+
+    </div>
+</div>
+
+<!-- Modal End-->
+
+  <tg-chat name="world"></tg-chat>
+</body>
+
+<script src="./scripts/index.js"></script>
+
+<main style="display: none;">
+
+<div class=bg-paper></div>
+
+<div>
+  My Socket ID: <span id="my-socket-id"></span>
+</div>
+<div style="display:hidden" id="active-user-container">
+  <h3 class="panel-title">Active Users:</h3>
+</div>
+</main>
+
+<div id=modal1 class=modal aria-labelledby=modal-title1>
+  <div class=modal_content>
+    <div class="modal_scroll form-websocket">
+      <div class="pure-control-group">
+        <input type="text" id="ws-user-details" placeholder="Email-ID/Linkedin URl/Phone number" style="height: 0;width: 300px;">    
+      </div>
+      <div>
+        <button class="pure-button pure-button-primary" id="getPermissionBtn" onclick="getPermission()">Click to Talk</button>
+      </div>
+      <div class="video-chat-container">
+        <h2 class="talk-info" id="talking-with-info">
+        </h2>
+        <div class="video-container">
+          <video autoplay class="remote-video" id="remote-video" controls></video>
+        </div>
+        <div style="display: none;">
+          <video autoplay muted class="local-video" id="local-video"></video>
+        </div>
+        <div id="userMsg"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class=lightbox data-modal_lightbox>
+  <div id=modal_bg class=lightbox_bg></div>
+</div>
+
+
+
+<script src="scripts/popupanim.js"></script>
+
+
+ <script>
+
+  formElem.onsubmit = async (e) => {
+    e.preventDefault();
+
+    let response = await fetch('https://my-project.aykz.workers.dev/submission', 
+    {
+      method: 'POST',
+      body: new FormData(formElem)
+    });
+
+    let result = await response.json();
+    if(result){
+      const selector = document.querySelector("#post-contact").style;
+      selector.display = 'block';
+      formElem.reset();
+      setTimeout(function(){
+        selector.display = 'none';
+      }, 5000);
+    }
+
+  };
+
+ </script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1819157704972161');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1819157704972161&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+   
+
+<script src="js/scripts.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-91656405-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-91656405-2');
+</script>
+
+
+<script defer src='js/telegram.js'></script>
+
+<script>
+
+function FormDataToJSON(FormElement){    
+    var formData = new FormData(FormElement);
+    var ConvertedJSON= {};
+    for (const [key, value]  of formData.entries())
+    {
+        ConvertedJSON[key] = value;
+    }
+
+    return ConvertedJSON
+}
+
+  formResumeElem.onsubmit = async (e) => {
+    e.preventDefault();
+
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    const jsonData = (FormDataToJSON(formResumeElem));
+    var requestOptions = {
+      method: 'POST',
+      headers: myHeaders,
+      body: JSON.stringify(jsonData)
+    };
+
+    fetch("https://api.ayzom.com/Resume-handler", requestOptions)
+      .then(response => {
+        document.querySelector("#formResumeElemBtn").textContent = "Check your Email!";
+        return response.json();
+      })
+      .then(result => {
+        console.log(result)
+        formResumeElem.reset();
+        document.querySelector("#formResumeElemBtn").textContent = "Get Resume";
+      })
+      .catch(error => console.log('error', error));
+    }
+</script>
+
+<script>
+
+  function urlBase64ToUint8Array(base64String) {
+    const padding = '='.repeat((4 - base64String.length % 4) % 4);
+    const base64 = (base64String + padding)
+      .replace(/-/g, '+')
+      .replace(/_/g, '/');
+  
+    const rawData = window.atob(base64);
+    const outputArray = new Uint8Array(rawData.length);
+  
+    for (let i = 0; i < rawData.length; ++i) {
+      outputArray[i] = rawData.charCodeAt(i);
+    }
+    return outputArray;
+  }
+
+  const serverHost="https://browser-notifier-ayzom.vercel.app";
+
+  navigator.serviceWorker.ready
+  .then(function (registration) {
+    return registration.pushManager
+      .getSubscription()
+      .then(async function (subscription) {
+        if (subscription) {
+          return subscription;
+        }
+
+        const response = await fetch(serverHost+"/vapidPublicKey");
+        const vapidPublicKey = await response.text();
+        const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
+
+        return registration.pushManager.subscribe({
+          userVisibleOnly: true,
+          applicationServerKey: convertedVapidKey,
+        });
+      });
+  })
+  .then(function (subscription) {
+
+    console.log({subscription});
+
+    fetch(serverHost+"/save-user", {
+      method: "post",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        subscription: subscription,
+      }),
+    });
+    document.getElementById("doIt").onclick = function () {
+      const delay = 1;
+      const ttl = 1;
+
+      fetch(serverHost+"/notify", {
+        method: "post",
+        headers: {
+          "Content-type": "application/json",
+        },
+        body: JSON.stringify({
+          subscription: subscription,
+          delay: delay,
+          ttl: ttl,
+        }),
+      });
+    };
+  });
+
+
+  function loadBlog() {
+      fetch("https://api.hashnode.com/", {
+        "headers": {
+          "accept": "application/json",
+          "content-type": "application/json",
+        },
+        "body": "{\"operationName\":null,\"variables\":{},\"query\":\"{\\n  user(username: \\\"arki7n\\\") {\\n    publication {\\n      posts(page: 0) {\\n        title\\n        brief\\n        slug\\n        cuid\\n      }\\n    }\\n  }\\n}\\n\"}",
+        "method": "POST",
+        "mode": "cors",
+        "credentials": "omit"
+      }).then(response=>response.json())
+      .then(res=>{
+        const {data: {user: {publication: posts}}} = res;
+        console.log({posts});
+    });
+  }
+
+  loadBlog();
+
+
+</script>
+
+<!-- <button type="button" id="doIt">Click</button> -->
+
+</html>
